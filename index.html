@@ -3,9 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>Project List</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>hello</h1>
+    <div class="container">
+      <!-- Sidebar with profile link -->
+      <aside class="sidebar">
+        <h2>Profile</h2>
+        <a href="https://github.com/shalev396" target="_blank">
+          <img
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+            alt="GitHub Profile"
+            class="profile-img"
+          />
+        </a>
+        <p>
+          <a href="https://github.com/shalev396" target="_blank"
+            >shalev396's GitHub</a
+          >
+        </p>
+      </aside>
+
+      <!-- Main content with project list -->
+      <main class="main-content">
+        <h1>Projects</h1>
+        <ul id="project-list">
+          <!-- Project items will be added here by JavaScript -->
+        </ul>
+      </main>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
   </body>
 </html>

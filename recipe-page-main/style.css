@@ -1,0 +1,174 @@
+@import "css/fonts.css";
+@import "css/variables.css";
+@import "css/reset.css";
+/*custom styles*/
+body {
+  background-color: var(--color-white-100);
+}
+div.long-Recipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+div.img-box {
+  max-width: 375;
+}
+div.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 0rem;
+  padding: 1rem;
+}
+h1,
+h2 {
+  font-weight: 100;
+}
+h2 {
+  color: var(--color-secondary-title-800);
+}
+p.main-text {
+  color: var(--color-text-700);
+}
+div.text-box h3 {
+  color: var(--color-box-title-300);
+}
+
+div.time-box {
+  background-color: var(--color-box-bgc-250);
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+div.text-box ul {
+  margin-top: 1rem;
+  margin-left: 1.4rem;
+}
+div.text-box ul li {
+  font-size: 10px;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  max-width: 99%;
+}
+div.text-box ul li span span {
+  font-weight: bold;
+}
+div.text-box ul li span {
+  font-size: 15px;
+}
+li {
+  color: var(--color-text-700);
+}
+div.ingredients {
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: var(--color-border-150);
+}
+div.ingredients ul {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+div.ingredients ul li {
+  padding-bottom: 0.5rem;
+}
+div.text-box div.instructions {
+  border-bottom: 10px;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: var(--color-border-150);
+}
+div.text-box div.instructions ol {
+  margin-bottom: 0.7rem;
+}
+
+div.text-box div.instructions ol li {
+  font-weight: bold;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+  padding-bottom: 0.8rem;
+}
+div.text-box div.instructions ol li span {
+  font-weight: 100;
+}
+div.Nutrition {
+  margin-top: 0.5rem;
+}
+div.Nutrition p {
+  margin-top: 1rem;
+  margin-left: 0.1rem;
+  color: var(--color-text-700);
+  margin-bottom: 1.5rem;
+}
+div.table {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+div.table div {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 15rem;
+  padding-bottom: 0.4rem;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: var(--color-border-150);
+}
+div.table div :last-child {
+  justify-content: start;
+  color: var(--color-secondary-title-800);
+  font-weight: bold;
+}
+div.table div div {
+  border-bottom: none;
+}
+div.table div div:first-child {
+  color: var(--color-text-700);
+}
+@media (min-width: 376px) {
+  body {
+    background-color: var(--color-bgc-175);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* padding: 10rem; */
+    padding-top: 10rem;
+    /* padding-bottom: 10rem; */
+  }
+  div.long-Recipe {
+    /* margin: 10rem; */
+    border: solid;
+    border-width: 36px;
+    border-color: var(--color-white-100);
+    border-radius: 20px;
+    max-width: 780px;
+    min-width: 375px;
+    width: 70%;
+    background-color: var(--color-white-100);
+  }
+  div.img-box {
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  div.time-box {
+    width: 100%;
+  }
+  div.ingredients {
+    width: 100%;
+  }
+  div.table div {
+    width: 100%;
+  }
+  div.table div div {
+    width: 100%;
+  }
+}

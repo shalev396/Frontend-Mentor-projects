@@ -1,0 +1,10 @@
+:root {
+  --color-white-100: hsl(0, 0%, 100%);
+  --color-secondary-title-800: hsl(14, 45%, 36%);
+  --color-primary-title-900: hsl(24, 5%, 18%);
+  --color-box-title-300: hsl(332, 51%, 32%);
+  --color-box-bgc-250: hsl(330, 100%, 98%);
+  --color-text-700: hsl(30, 10%, 34%);
+  --color-bgc-175: hsl(30, 54%, 90%);
+  --color-border-150: hsl(30, 18%, 87%);
+}

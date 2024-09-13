@@ -4,13 +4,13 @@ const projects = [
     id: 1,
     name: "stats-preview-card-component",
     description: "using HTML, CSS.",
-    link: "/stats-preview-card-component-main/index.html",
+    link: "/webdevportfolio/stats-preview-card-component-main/index.html",
   },
   {
     id: 2,
     name: "recipe-page",
     description: "using HTML, CSS.",
-    link: "/recipe-page-main/index.html",
+    link: "/webdevportfolio/recipe-page-main/index.html",
   },
 ];
 

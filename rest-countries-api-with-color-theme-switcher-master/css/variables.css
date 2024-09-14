@@ -1,0 +1,11 @@
+:root {
+  --color-dm-elements-700: hsl(209, 23%, 22%);
+  --color-dm-background-800: hsl(207, 26%, 17%);
+  --color-dm-input-300: hsl(0, 0%, 52%);
+  --color-dm-text-100: hsl(0, 0%, 100%);
+  --color-lm-text-900: hsl(200, 15%, 8%);
+  --color-lm-background-150: hsl(0, 0%, 98%);
+  --color-lm-elements-100: hsl(0, 0%, 100%);
+  --font-lm-weight-600: 600;
+  --font-dm-weight-300: 300;
+}

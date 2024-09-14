@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>frontend mentor | Rest Countries Ap iWith Color Theme Switch</title>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>Where in the world?</h1>
+      </div>
+
+      <div class="dark-mode-toggle">
+        <img
+          id="moonIcon"
+          class="moon-image"
+          src="/assets/images/icons8-lm-50.png"
+          alt="moon image"
+        />
+        <button id="DMBut">Dark Mode</button>
+      </div>
+    </header>
+    <main>
+      <div class="search-element">
+        <div class="search">
+          <img
+            id="searchIcon"
+            class="search-image"
+            src="/assets/images/icons8-lm-search-24.png"
+            alt="search image"
+          />
+          <input
+            type="text"
+            id="text"
+            name="search"
+            placeholder="Search for a country..."
+          />
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="custom-dropdown">
+          <button class="dropdown-btn">Filter by Region</button>
+          <ul class="dropdown-list">
+            <li>Africa</li>
+            <li>America</li>
+            <li>Asia</li>
+            <li>Europe</li>
+            <li>Oceania</li>
+          </ul>
+        </div>
+      </div>
+      <div class="Countries-blocks">
+        <div id="Country-div">
+          <img
+            id="countryFlagID"
+            class="countryFlag"
+            src="/assets/images/icons8-lm-50.png"
+            alt="countryFlag"
+          />
+          <div>
+            <p id="countryNameID">israel</p>
+            <p id="countryPopulationID">
+              Population:
+              <span id="countryPopulationNumberID"> 8,000,000 </span>
+            </p>
+            <p id="countryReginID">
+              Region: <span id="countryRegionStringID"> Asia </span>
+            </p>
+            <p id="countryPopulationID">
+              Capital: <span id="countryCapitalStringID"> Jerusalem </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script/main.js"></script>
+  </body>
+</html>

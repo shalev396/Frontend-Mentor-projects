@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+html,
+body {
+  /*home 14px detail 16px*/
+  font-family: Nunito Sans;
+  font-weight: 300;
+}
+h1 {
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+}

@@ -23,36 +23,37 @@
       </div>
     </header>
     <main>
-      <div class="search-element">
-        <div class="search">
-          <img
-            id="searchIcon"
-            class="search-image"
-            src="/assets/images/icons8-lm-search-24.png"
-            alt="search image"
-          />
-          <input
-            type="text"
-            id="text"
-            name="search"
-            placeholder="Search for a country..."
-          />
+      <div class="search-filter">
+        <div class="search-element">
+          <div class="search">
+            <img
+              id="searchIcon"
+              class="search-image"
+              src="/assets/images/icons8-lm-search-24.png"
+              alt="search image"
+            />
+            <input
+              type="text"
+              id="text"
+              name="search"
+              placeholder="Search for a country..."
+            />
+          </div>
+        </div>
+        <div class="filter">
+          <div class="custom-dropdown">
+            <button class="dropdown-btn">Filter by Region</button>
+            <ul class="dropdown-list">
+              <li>Africa</li>
+              <li>America</li>
+              <li>Asia</li>
+              <li>Europe</li>
+              <li>Oceania</li>
+            </ul>
+          </div>
         </div>
       </div>
-
-      <div class="filter">
-        <div class="custom-dropdown">
-          <button class="dropdown-btn">Filter by Region</button>
-          <ul class="dropdown-list">
-            <li>Africa</li>
-            <li>America</li>
-            <li>Asia</li>
-            <li>Europe</li>
-            <li>Oceania</li>
-          </ul>
-        </div>
-      </div>
-      <div class="Countries-blocks">
+      <div class="Countries-blocks" id="Countries-blocks">
         <div id="Country-div0" class="country-block">
           <img
             id="countryFlagID0"
@@ -66,9 +67,10 @@
               Population:
               <span id="countryPopulationNumberID0"> 8,000,000 </span>
             </p>
-            <p id="countryReginID0">
-              Region: <span id="countryRegionStringID0"> Asia </span>
-            </p>
+            <!--<p id="countryReginID0">
+            Region: <span id="countryRegionStringID0"> Asia </span>
+          </p>-->
+            <p id="countryReginID0"></p>
             <p id="countryCapitalID0">
               Capital: <span id="countryCapitalStringID0"> Jerusalem </span>
             </p>

@@ -12,6 +12,7 @@
   --border-radius: 5px;
   --box-shadow: 0px 0px 1rem hsla(0, 0%, 0%, 0.1);
 }
+
 /*toggled by js*/
 .dark-mode {
   --color-background: var(--color-dm-background-800);
@@ -20,6 +21,8 @@
   --color-input: var(--color-dm-input-300);
   --font-weight: var(--font-dm-weight-300);
 }
+
+/*body*/
 body {
   background-color: var(--color-background);
   color: var(--color-text);
@@ -32,6 +35,7 @@ body {
   flex-shrink: 0;
 }
 
+/*header*/
 header {
   background-color: var(--color-elements);
   display: flex;
@@ -69,11 +73,18 @@ header div.dark-mode-toggle button#DMBut {
   font-size: 14px;
 }
 
+/*main*/
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+main div.search-filter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 main div.search-element {
   width: 100%;
@@ -105,7 +116,14 @@ main div.search-element div.search input#text[type="text"]::placeholder {
   /* color: var(--color-text); */
   position: static;
 }
-
+/*used stack overflow*/
+main div.search-element div.search input#text::placeholder {
+  color: var(--color-lm-text-900);
+}
+/*used stack overflow*/
+body.dark-mode main div.search-element div.search input#text::placeholder {
+  color: var(--color-dm-text-100);
+}
 main div.filter {
   display: flex;
   flex-direction: row;
@@ -117,16 +135,16 @@ main div.filter div.dropdown {
   width: 51%;
 }
 
-/*custom dropdown*/
-/* The container for the dropdown */
+/*custom dropdown edited preset from stack overflow*/
 .custom-dropdown {
+  /* The container for the dropdown */
   margin-left: 1.5rem;
   position: relative;
   width: 43.5%; /* Matches the width of the dropdown button */
   box-shadow: var(--box-shadow);
 }
-/* Button styles */
 .dropdown-btn {
+  /* Button styles */
   width: 100%;
 
   padding-top: 1rem;
@@ -140,8 +158,8 @@ main div.filter div.dropdown {
   border-radius: var(--border-radius);
   font-family: inherit;
 }
-/* Custom arrow for the dropdown button */
 .dropdown-btn:after {
+  /* Custom arrow for the dropdown button */
   content: "";
   position: absolute;
   top: 50%;
@@ -149,8 +167,8 @@ main div.filter div.dropdown {
   border: 6px solid transparent;
   border-color: var(--color-text) transparent transparent transparent;
 }
-/* The dropdown list */
 .dropdown-list {
+  /* The dropdown list */
   display: none;
   position: absolute;
   top: 100%;
@@ -162,12 +180,12 @@ main div.filter div.dropdown {
   width: 100%;
   border-radius: var(--border-radius);
 }
-/* Show the dropdown list when active */
 .custom-dropdown .dropdown-list.active {
+  /* Show the dropdown list when active */
   display: block;
 }
-/* Dropdown list items */
 .dropdown-list li {
+  /* Dropdown list items */
   padding-left: 1rem;
   padding-top: 1rem;
 
@@ -176,15 +194,107 @@ main div.filter div.dropdown {
 .dropdown-list li:last-child {
   padding-bottom: 1rem;
 }
-/* Ensure the dropdown list doesn't overflow */
 .dropdown-list {
+  /* Ensure the dropdown list doesn't overflow */
   max-height: 250px;
   overflow-y: auto;
 }
-
+/*country blocks*/
+.Countries-blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .country-block {
-  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow: hidden;
+  max-width: 70%;
+  border-radius: 0.5rem;
   background-color: var(--color-elements);
-  padding: 1rem;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--box-shadow);
+}
+.country-block.img {
+  overflow: hidden;
+}
+div.filter {
+  margin-bottom: 2.25rem;
+}
+.country-block div {
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+.country-block div :first-child {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.country-block div :not(:first-child) {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.country-block div :last-child {
+  padding-bottom: 1.75rem;
+}
+.country-name {
+  font-weight: bold;
+}
+div p span.info-span {
+  font-weight: 600;
+}
+@media (min-width: 376px) {
+  main div.search-filter {
+    width: 100%;
+    flex-direction: row;
+  }
+  main div.search-element {
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  main div.search-element div.search {
+    max-width: 40rem;
+    width: 100%;
+    margin-left: 1rem;
+  }
+  main div.custom-dropdown {
+    max-width: 12.5rem;
+    margin: 1.5rem;
+    right: 1rem;
+    position: absolute;
+  }
+
+  .Countries-blocks {
+    width: 100%;
+    margin-inline: 6rem;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .country-block {
+    height: 27rem;
+    width: 22rem;
+  }
+  .countryFlag {
+    max-height: 50%;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  main div.search-element div.search {
+    max-width: 40rem;
+    width: 100%;
+    margin-left: 6rem;
+  }
+  main div.custom-dropdown {
+    max-width: 12.5rem;
+    margin: 1.5rem;
+    right: 5.5rem;
+    position: absolute;
+  }
 }

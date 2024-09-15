@@ -14,17 +14,25 @@ document.getElementById("DMBut").addEventListener("click", function () {
   }
 });
 
-function duplicateDiv() {
-  // Get the original div
-  var originalDiv = document.getElementById("Country-div");
-  // Clone the original div
-  var clone = originalDiv.cloneNode(true);
-  // Optionally, remove the id attribute from the clone
+function duplicateDiv(i) {
+  let originalDiv = document.getElementById(`Country-div${i}`);
+  let clone = originalDiv.cloneNode(true);
   clone.removeAttribute("id");
-  // Append the clone to the body or any other container
+  clone.id = `Country-div${i + 1}`;
+  children = clone.children;
+  children[0].id = `countryFlagID${i + 1}`;
+  let grandson = children[1].children;
+  let grandgrandson = grandson[0].children;
+  // grandgrandson.innerText = "1111111111111111";
+
+  grandson[0].id = `countryNameID${i + 1}`;
+  grandson[1].id = `countryPopulationID${i + 1}`; //
+  grandson[2].id = `countryReginID${i + 1}`;
+  grandson[3].id = `countryCapitalID${i + 1}`;
+
   document.body.appendChild(clone);
 }
-duplicateDiv();
+// duplicateDiv(0);
 
 //////////////////
 
@@ -58,3 +66,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+/////////////////api
+function getAll() {
+  fetch("https://restcountries.com/v3.1/all", {
+    method: "GET",
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      for (let i = 0; i < data.length; i++) {
+        //img
+        let imgCountry = document.getElementById(`countryFlagID${i}`);
+        imgCountry.src = data[i].flags.png;
+        imgCountry.alt = data[i].flags.alt;
+        //name
+        let pCountryName = document.getElementById(`countryNameID${i}`);
+        pCountryName.innerText = data[i].name.common;
+        //pop
+        let PCountryPop = document.getElementById(`countryPopulationID${i}`);
+        PCountryPop.innerText = data[i].population;
+        //reg
+        let PCountryReg = document.getElementById(`countryReginID${i}`);
+        PCountryReg.innerText = data[i].region;
+        //cap
+        let PCountryCap = document.getElementById(`countryCapitalID${i}`);
+        if (data[i].capital) {
+          //error
+          PCountryCap.innerText = data[i].capital[0];
+        } else {
+          PCountryCap.innerText = "";
+        }
+        console.log(i);
+        if (i !== data.length - 1) duplicateDiv(i);
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("An error occurred. Please try again.");
+    });
+}
+getAll();

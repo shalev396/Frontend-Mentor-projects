@@ -181,3 +181,10 @@ main div.filter div.dropdown {
   max-height: 250px;
   overflow-y: auto;
 }
+
+.country-block {
+  border-radius: 1rem;
+  background-color: var(--color-elements);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}

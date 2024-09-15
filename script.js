@@ -11,6 +11,12 @@ const projects = [
     description: "using HTML, CSS.",
     link: "/Frontend-Mentor-projects/recipe-page-main/index.html",
   },
+  {
+    id: 3,
+    name: "rest-countries-api-with-color-theme-switcher-master",
+    description: "using HTML, CSS, Js, Api",
+    link: "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/index.html",
+  },
 ];
 
 function renderProjects() {

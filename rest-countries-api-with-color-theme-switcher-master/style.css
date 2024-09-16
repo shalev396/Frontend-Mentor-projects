@@ -244,6 +244,82 @@ div.filter {
 div p span.info-span {
   font-weight: 600;
 }
+/*detail page*/
+div.back-div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+div.back-div div.back-button-div {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  background-color: var(--color-elements);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 2rem;
+  padding-inline: 1.5rem;
+  box-shadow: var(--box-shadow);
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+div.back-div div.back-button-div img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+div.back-div div.back-button-div button.back-button {
+  font-size: 14px;
+  color: var(--color-text);
+  background-color: var(--color-elements);
+  border: 0rem;
+  padding-left: 0.5rem;
+}
+main.detail-main {
+  display: flex;
+  flex-direction: column;
+}
+main.detail-main div.flage-img img.detail-flag {
+  height: 15rem;
+  width: 20.5rem;
+  box-shadow: var(--box-shadow);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+main.detail-main div.details {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin-top: 1rem;
+  font-size: 16px;
+}
+main.detail-main div.details h2#countryName {
+  margin-bottom: 1rem;
+}
+main.detail-main div.details p {
+  margin-bottom: 1rem;
+}
+main.detail-main div.details p#countryTopDomain {
+  margin-top: 2rem;
+}
+main.detail-main div.details div.boeder-countries {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+main.detail-main div.details h3 {
+  margin-top: 2rem;
+  font-weight: 600;
+}
+main.detail-main div.details div.boeder-countries div.borederdCountryID0 {
+  display: flex;
+  background-color: var(--color-elements);
+  width: 7rem;
+  justify-content: center;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 14px;
+}
 @media (min-width: 376px) {
   header {
     padding-top: 2.5rem;

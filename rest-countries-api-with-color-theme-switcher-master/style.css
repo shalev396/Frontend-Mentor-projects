@@ -245,6 +245,18 @@ div p span.info-span {
   font-weight: 600;
 }
 @media (min-width: 376px) {
+  header {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  h1 {
+    margin-left: 2.5rem;
+    font-size: 14px;
+  }
+  header div.dark-mode-toggle {
+    margin-right: 2rem;
+    font-size: 14px;
+  }
   main div.search-filter {
     width: 100%;
     flex-direction: row;
@@ -252,19 +264,38 @@ div p span.info-span {
   main div.search-element {
     padding-left: 1rem;
     margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  main div.search-element div.search img.search-image {
+    width: 2rem;
+    height: 2rem;
+    align-self: center;
   }
   main div.search-element div.search {
     max-width: 40rem;
     width: 100%;
     margin-left: 1rem;
+    height: 5rem;
+  }
+  main div.search-element div.search input#text {
+    font-size: 14px;
   }
   main div.custom-dropdown {
     max-width: 12.5rem;
     margin: 1.5rem;
     right: 1rem;
+    top: 10rem;
     position: absolute;
   }
+  .dropdown-btn {
+    height: 4.5rem;
+    font-size: 14px;
+  }
 
+  .dropdown-list li {
+    /* Dropdown list items */
+    padding-left: 2rem;
+  }
   .Countries-blocks {
     width: 100%;
     margin-inline: 6rem;
@@ -289,12 +320,12 @@ div p span.info-span {
   main div.search-element div.search {
     max-width: 40rem;
     width: 100%;
-    margin-left: 6rem;
+    margin-left: 1.5rem;
   }
   main div.custom-dropdown {
-    max-width: 12.5rem;
+    max-width: 16rem;
     margin: 1.5rem;
-    right: 5.5rem;
+    right: 1rem;
     position: absolute;
   }
 }

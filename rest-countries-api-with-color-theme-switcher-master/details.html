@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      frontend mentor | Rest Countries Api With Color Theme Switch detail
+    </title>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>Where in the world?</h1>
+      </div>
+
+      <div class="dark-mode-toggle">
+        <img
+          id="moonIcon"
+          class="moon-image"
+          src="/assets/images/icons8-lm-50.png"
+          alt="moon image"
+        />
+        <button id="DMBut">Dark Mode</button>
+      </div>
+    </header>
+    <div class="back-button">
+      <button>Back</button>
+    </div>
+    <main>
+      <div class="flage-img">
+        <img src="" alt="country flag" />
+      </div>
+      <div class="details">
+        <h2 id="countryName">name</h2>
+        <p id="countryNativeName">
+          Native Name: <span id="countryNativeNameString"> Native Name </span>
+        </p>
+        <p id="countryPopulation">
+          Population: <span id="countryPopulationNumber"> 1 </span>
+        </p>
+        <p id="countryRegion">
+          Region: <span id="countryRegionString"> Region </span>
+        </p>
+
+        <p id="countrySunRegion">
+          Sub Region: <span id="countrySubRegionString"> Sub Region </span>
+        </p>
+        <p id="countryCapital">
+          Capital: <span id="countryCapitalString"> Capital </span>
+        </p>
+        <!--empty place-->
+        <p id="countryTopDomain">
+          Top Level Domain: <span id="countryTopDomainString"> TopDomain </span>
+        </p>
+        <p id="countryCurrencies">
+          Currencies: <span id="countryCurrenciesString"> Currencies </span>
+        </p>
+        <p id="countryLanguages">
+          Languages: <span id="countryLanguagesString"> Languages </span>
+        </p>
+        <h3>Border Countries:</h3>
+        <div class="boeder-countries">
+          <div class="borederdCountryID0">Country1</div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script/details.js"></script>
+  </body>
+</html>

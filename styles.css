@@ -74,7 +74,7 @@ body {
   padding: 15px;
   position: relative;
   flex-shrink: 0;
-  width: 25rem;
+  width: 17rem;
 }
 
 .project-image {
@@ -144,4 +144,19 @@ body {
   border-radius: 5px;
   font-size: 12px;
   width: fit-content;
+}
+@media (max-width: 510px) {
+  .sidebar {
+    padding: 20px;
+    width: 100%;
+    height: 15rem;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1441px) {
+  .project-card {
+    width: 25rem;
+  }
 }

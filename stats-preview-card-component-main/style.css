@@ -1,11 +1,11 @@
 /*styles from challenge*/
 @font-face {
   font-family: inter;
-  src: url("/2024/09_September/12/Exercises/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
+  src: url("./fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
 }
 @font-face {
   font-family: deca;
-  src: url("/2024/09_September/12/Exercises/fonts/Lexend_Deca/static/LexendDeca-Regular.ttf");
+  src: url("./fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
 }
 :root {
   --DesktopBgP: ".\images\image-header-desktop.jpg";

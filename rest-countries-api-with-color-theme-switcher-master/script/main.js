@@ -1,5 +1,6 @@
 let dark = false;
 let countryCount = 0;
+let temp = "";
 //dark mode
 document.getElementById("DMBut").addEventListener("click", function () {
   document.body.classList.toggle("dark-mode");
@@ -7,12 +8,16 @@ document.getElementById("DMBut").addEventListener("click", function () {
   let imgSearch = document.getElementById("searchIcon");
   if (dark != true) {
     dark = true;
-    imgMoon.src = "/assets/images/icons8-dm-50.png";
-    imgSearch.src = "/assets/images/icons8-dm-search-24.png";
+    imgMoon.src =
+      "/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-dm-50.png";
+    imgSearch.src =
+      "/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-dm-search-24.png";
   } else {
     dark = false;
-    imgMoon.src = "/assets/images/icons8-lm-50.png";
-    imgSearch.src = "/assets/images/icons8-lm-search-24.png";
+    imgMoon.src =
+      "/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-lm-50.png";
+    imgSearch.src =
+      "/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-lm-search-24.png";
   }
 });
 //duplicate div function
@@ -22,6 +27,7 @@ function duplicateDiv(i) {
   // document.getElementById("Countries-blocks").innerHTML += clone.innerHTML;
   clone.removeAttribute("id");
   clone.id = `Country-div${i + 1}`;
+
   children = clone.children;
   children[0].id = `countryFlagID${i + 1}`;
   let grandson = children[1].children;
@@ -30,6 +36,7 @@ function duplicateDiv(i) {
   grandson[1].id = `countryPopulationID${i + 1}`; //
   grandson[2].id = `countryReginID${i + 1}`;
   grandson[3].id = `countryCapitalID${i + 1}`;
+
   // document.getElementById("Countries-blocks").innerHTML += clone.innerHTML;
   document.getElementById("Countries-blocks").appendChild(clone);
 }
@@ -154,6 +161,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  searchInput.addEventListener("input", function () {
+    search();
+  });
   searchIcon.addEventListener("click", function () {
     search();
   });
@@ -182,7 +192,11 @@ function getAll() {
         spanPop.className = "info-span";
         spanPop.textContent = "Population: ";
         PCountryPop.appendChild(spanPop);
-        PCountryPop.innerHTML = spanPop.outerHTML + data[i].population;
+        temp = "";
+        temp = data[i].population;
+        temp = parseInt(temp);
+        temp = temp.toLocaleString();
+        PCountryPop.innerHTML = spanPop.outerHTML + temp;
         //reg
         let PCountryReg = document.getElementById(`countryReginID${i}`);
         let spanReg = document.createElement("span");
@@ -203,6 +217,11 @@ function getAll() {
           PCountryCap.innerText = "";
         }
         countryCount++;
+        document.getElementById(`Country-div${i}`).onclick = function () {
+          sessionStorage.setItem("countryName", data[i].name.common);
+          location.href =
+            "/rest-countries-api-with-color-theme-switcher-master/details.html";
+        };
         if (i !== data.length - 1) duplicateDiv(i);
       }
     })

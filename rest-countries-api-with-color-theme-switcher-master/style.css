@@ -290,15 +290,17 @@ main.detail-main div.flage-img img.detail-flag {
 main.detail-main div.details {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 100%;
   margin-top: 1rem;
   font-size: 16px;
 }
 main.detail-main div.details h2#countryName {
   margin-bottom: 1rem;
+  margin-left: 1.5rem;
 }
 main.detail-main div.details p {
   margin-bottom: 1rem;
+  margin-left: 1.5rem;
 }
 main.detail-main div.details p#countryTopDomain {
   margin-top: 2rem;
@@ -310,15 +312,27 @@ main.detail-main div.details div.boeder-countries {
 main.detail-main div.details h3 {
   margin-top: 2rem;
   font-weight: 600;
+  margin-left: 1.5rem;
 }
-main.detail-main div.details div.boeder-countries div.borederdCountryID0 {
+main.detail-main div.details div.boeder-countries {
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  width: 90%;
+}
+main.detail-main div.details div.boeder-countries div.borederdCountryID {
   display: flex;
   background-color: var(--color-elements);
-  width: 7rem;
+  width: 6.5rem;
   justify-content: center;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   font-size: 14px;
+}
+span.detail-info-span {
+  font-weight: bold;
 }
 @media (min-width: 376px) {
   header {
@@ -360,7 +374,7 @@ main.detail-main div.details div.boeder-countries div.borederdCountryID0 {
     max-width: 12.5rem;
     margin: 1.5rem;
     right: 1rem;
-    top: 10rem;
+    top: 8.9rem;
     position: absolute;
   }
   .dropdown-btn {
@@ -378,7 +392,7 @@ main.detail-main div.details div.boeder-countries div.borederdCountryID0 {
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 1rem;
     flex-grow: 0;
     flex-shrink: 0;
   }
@@ -390,6 +404,46 @@ main.detail-main div.details div.boeder-countries div.borederdCountryID0 {
     max-height: 50%;
     height: 100%;
     width: 100%;
+  }
+  /*detail page*/
+  main.detail-main {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+  }
+  main.detail-main div.flage-img {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex-shrink: 0;
+    margin-top: 0rem;
+  }
+  main.detail-main div.flage-img img.detail-flag {
+    height: 80%;
+    width: 80%;
+    align-self: center;
+  }
+  main.detail-main div.details div.split {
+    display: flex;
+    flex-direction: row;
+    margin-top: 6rem;
+  }
+  main.detail-main div.details div.chapter3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0;
+  }
+  main.detail-main div.details div.chapter2 {
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  main.detail-main div.details div.chapter3 div.boeder-countries {
+    margin-top: 4rem;
+  }
+  main.detail-main div.details div.chapter3 h3 {
+    width: 20rem;
   }
 }
 @media (min-width: 768px) {

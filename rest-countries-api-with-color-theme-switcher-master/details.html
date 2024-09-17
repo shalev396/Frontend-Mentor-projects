@@ -18,15 +18,19 @@
         <img
           id="moonIcon"
           class="moon-image"
-          src="/assets/images/icons8-lm-50.png"
+          src="/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-lm-50.png"
           alt="moon image"
         />
         <button id="DMBut">Dark Mode</button>
       </div>
     </header>
     <div class="back-div">
-      <div class="back-button-div">
-        <img src="assets/images/icons8-lm-arrow-50.png" alt="country flag" />
+      <div class="back-button-div" id="back-button">
+        <img
+          id="backArrow"
+          src="/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-lm-arrow-50.png"
+          alt="country flag"
+        />
         <button class="back-button">Back</button>
       </div>
     </div>
@@ -40,36 +44,48 @@
         />
       </div>
       <div class="details">
-        <h2 id="countryName">name</h2>
-        <p id="countryNativeName">
-          Native Name: <span id="countryNativeNameString"> Native Name </span>
-        </p>
-        <p id="countryPopulation">
-          Population: <span id="countryPopulationNumber"> 1 </span>
-        </p>
-        <p id="countryRegion">
-          Region: <span id="countryRegionString"> Region </span>
-        </p>
+        <div class="split">
+          <div class="chapter1">
+            <h2 id="countryName">name</h2>
+            <p id="countryNativeName">
+              Native Name:
+              <span id="countryNativeNameString"> Native Name </span>
+            </p>
+            <p id="countryPopulation">
+              Population: <span id="countryPopulationNumber"> 1 </span>
+            </p>
+            <p id="countryRegion">
+              Region: <span id="countryRegionString"> Region </span>
+            </p>
 
-        <p id="countrySunRegion">
-          Sub Region: <span id="countrySubRegionString"> Sub Region </span>
-        </p>
-        <p id="countryCapital">
-          Capital: <span id="countryCapitalString"> Capital </span>
-        </p>
-        <!--empty place-->
-        <p id="countryTopDomain">
-          Top Level Domain: <span id="countryTopDomainString"> TopDomain </span>
-        </p>
-        <p id="countryCurrencies">
-          Currencies: <span id="countryCurrenciesString"> Currencies </span>
-        </p>
-        <p id="countryLanguages">
-          Languages: <span id="countryLanguagesString"> Languages </span>
-        </p>
-        <h3>Border Countries:</h3>
-        <div class="boeder-countries">
-          <div class="borederdCountryID0">Country1</div>
+            <p id="countrySunRegion">
+              Sub Region: <span id="countrySubRegionString"> Sub Region </span>
+            </p>
+            <p id="countryCapital">
+              Capital: <span id="countryCapitalString"> Capital </span>
+            </p>
+          </div>
+          <div class="chapter2">
+            <!--empty place-->
+            <p id="countryTopDomain">
+              Top Level Domain:
+              <span id="countryTopDomainString"> TopDomain </span>
+            </p>
+            <p id="countryCurrencies">
+              Currencies: <span id="countryCurrenciesString"> Currencies </span>
+            </p>
+            <p id="countryLanguages">
+              Languages: <span id="countryLanguagesString"> Languages </span>
+            </p>
+          </div>
+        </div>
+        <div class="chapter3">
+          <h3>Border Countries:</h3>
+          <div class="boeder-countries" id="boeder-countries">
+            <div class="borederdCountryID" id="borederdCountryID0">
+              Country1
+            </div>
+          </div>
         </div>
       </div>
     </main>

@@ -27,7 +27,7 @@ document.getElementById(`back-button`).onclick = function () {
 };
 //api
 function getCountry(countryName1, countryIndex, allCountries) {
-  fetch(`https://restcountries.com/v3.1/name/${countryName1}`, {
+  fetch(`https://restcountries.com/v3.1/name/${countryName1}?fullText=true`, {
     method: "GET",
   })
     .then((response) => response.json())

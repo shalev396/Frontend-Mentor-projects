@@ -9,21 +9,21 @@ document.getElementById("DMBut").addEventListener("click", function () {
   if (dark != true) {
     dark = true;
     imgMoon.src =
-      "/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-dm-50.png";
+      "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-dm-50.png";
     imgArrow.src =
-      "/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-dm-arrow-50.png";
+      "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-dm-arrow-50.png";
   } else {
     dark = false;
     imgMoon.src =
-      "/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-lm-50.png";
+      "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-lm-50.png";
     imgArrow.src =
-      "/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-lm-arrow-50.png";
+      "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-lm-arrow-50.png";
   }
 });
 //back
 document.getElementById(`back-button`).onclick = function () {
   location.href =
-    "/rest-countries-api-with-color-theme-switcher-master/index.html";
+    "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/index.html";
 };
 //api
 function getCountry(countryName1, countryIndex, allCountries) {

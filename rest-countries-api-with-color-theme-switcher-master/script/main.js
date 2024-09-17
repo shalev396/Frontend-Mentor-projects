@@ -9,15 +9,15 @@ document.getElementById("DMBut").addEventListener("click", function () {
   if (dark != true) {
     dark = true;
     imgMoon.src =
-      "/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-dm-50.png";
+      "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-dm-50.png";
     imgSearch.src =
-      "/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-dm-search-24.png";
+      "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-dm-search-24.png";
   } else {
     dark = false;
     imgMoon.src =
-      "/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-lm-50.png";
+      "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-lm-50.png";
     imgSearch.src =
-      "/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-lm-search-24.png";
+      "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/assets/images/icons8-lm-search-24.png";
   }
 });
 //duplicate div function
@@ -220,7 +220,7 @@ function getAll() {
         document.getElementById(`Country-div${i}`).onclick = function () {
           sessionStorage.setItem("countryName", data[i].name.common);
           location.href =
-            "/rest-countries-api-with-color-theme-switcher-master/details.html";
+            "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/details.html";
         };
         if (i !== data.length - 1) duplicateDiv(i);
       }

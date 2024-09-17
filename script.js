@@ -7,7 +7,8 @@ const projects = [
     difficulty: "1",
     level: "NEWBIE",
     tags: ["HTML", "CSS"],
-    image: "./stats-preview-card-component-main/design/desktop-preview.jpg", //Frontend-Mentor-projects/stats-preview-card-component-maindesigndesktop-preview.jpg
+    image:
+      "/Frontend-Mentor-projects/stats-preview-card-component-main/design/desktop-preview.jpg", //Frontend-Mentor-projects/stats-preview-card-component-maindesigndesktop-preview.jpg
     link: "/Frontend-Mentor-projects/stats-preview-card-component-main/index.html",
     badge: "Done",
   },
@@ -19,7 +20,7 @@ const projects = [
     difficulty: "1",
     level: "NEWBIE",
     tags: ["HTML", "CSS"],
-    image: "./recipe-page-main/preview.jpg",
+    image: "/Frontend-Mentor-projects/recipe-page-main/preview.jpg",
     link: "/Frontend-Mentor-projects/recipe-page-main/index.html",
     badge: "Done",
   },
@@ -28,10 +29,10 @@ const projects = [
     name: "Rest Countries Api With Color Theme Switcher",
     description: `This challenge is to integrate with the "REST Countries API" and to pull country data and display it like in the designs.`,
     difficulty: "4",
-    level: "advanced",
+    level: "ADVANCED",
     tags: ["HTML", "CSS", "JS", "API"],
     image:
-      "./rest-countries-api-with-color-theme-switcher-master/design/desktop-preview.jpg",
+      "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/design/desktop-preview.jpg",
     link: "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/index.html",
     badge: "Done",
   },
@@ -104,7 +105,7 @@ function renderProjects() {
       default:
         break;
     }
-    difficulty.style.fontWeight = "bold";
+    difficulty.style.fontWeight = "600";
     difficulty.style.border = "1px solid";
     difficulty.style.borderRadius = "5px";
 

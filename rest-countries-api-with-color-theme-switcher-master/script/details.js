@@ -76,10 +76,11 @@ function getCountry(countryName1, countryIndex, allCountries) {
       spanSubReg.className = "detail-info-span";
       spanSubReg.textContent = "Sub Region: ";
       PCountrySubReg.appendChild(spanSubReg);
+      console.log(data[0].subregion);
+
       if (data[0].subregion) {
         PCountrySubReg.innerHTML = spanSubReg.outerHTML + data[0].subregion;
-      }
-      PCountrySubReg.innerHTML = spanSubReg.outerHTML + "";
+      } else PCountrySubReg.innerHTML = spanSubReg.outerHTML + "";
 
       //cap
       let PCountryCap = document.getElementById(`countryCapital`);

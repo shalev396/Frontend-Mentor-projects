@@ -42,7 +42,7 @@ git clone https://github.com/shalev396/Frontend-Mentor-projects.git
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-# Frontend Mentor Projects
+
 
 ## License
 

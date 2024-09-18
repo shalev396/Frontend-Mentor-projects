@@ -46,4 +46,4 @@ git clone https://github.com/shalev396/Frontend-Mentor-projects.git
 
 ## License
 
-Android Project Fleemarket © 2021 by Shalev Ben Moshe is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. To view a copy of this license, visit [Creative Commons](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+Android Project Fleemarket © 2024 by Shalev Ben Moshe is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. To view a copy of this license, visit [Creative Commons](https://creativecommons.org/licenses/by-nc-nd/4.0/).

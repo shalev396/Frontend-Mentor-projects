@@ -41,7 +41,7 @@ const projects = [
     name: "testimonials grid section",
     description: `This challenge is to build out this testimonials grid section and get it looking as close to the design as possible.`,
     difficulty: "2",
-    level: "jUNIOR",
+    level: "JUNIOR",
     tags: ["HTML", "CSS"],
     image:
       "/Frontend-Mentor-projects/testimonials-grid-section-main/design/desktop-preview.jpg",

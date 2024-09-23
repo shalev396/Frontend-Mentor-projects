@@ -44,7 +44,7 @@ const projects = [
     level: "jUNIOR",
     tags: ["HTML", "CSS"],
     image:
-      "/Frontend-Mentor-projects/testimonials-grid-section-main/design/desktop-preview",
+      "/Frontend-Mentor-projects/testimonials-grid-section-main/design/desktop-preview.jpg",
     link: "/Frontend-Mentor-projects/testimonials-grid-section-main/index.html",
     badge: "Done",
   },

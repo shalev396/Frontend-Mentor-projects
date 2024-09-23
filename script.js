@@ -8,7 +8,7 @@ const projects = [
     level: "NEWBIE",
     tags: ["HTML", "CSS"],
     image:
-      "/Frontend-Mentor-projects/stats-preview-card-component-main/design/desktop-preview.jpg", //Frontend-Mentor-projects/stats-preview-card-component-maindesigndesktop-preview.jpg
+      "/Frontend-Mentor-projects/stats-preview-card-component-main/design/desktop-preview.jpg",
     link: "/Frontend-Mentor-projects/stats-preview-card-component-main/index.html",
     badge: "Done",
   },
@@ -34,6 +34,18 @@ const projects = [
     image:
       "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/design/desktop-preview.jpg",
     link: "/Frontend-Mentor-projects/rest-countries-api-with-color-theme-switcher-master/index.html",
+    badge: "Done",
+  },
+  {
+    id: 4,
+    name: "testimonials grid section",
+    description: `This challenge is to build out this testimonials grid section and get it looking as close to the design as possible.`,
+    difficulty: "2",
+    level: "jUNIOR",
+    tags: ["HTML", "CSS"],
+    image:
+      "/Frontend-Mentor-projects/testimonials-grid-section-main/design/desktop-preview",
+    link: "/Frontend-Mentor-projects/testimonials-grid-section-main/index.html",
     badge: "Done",
   },
 ];

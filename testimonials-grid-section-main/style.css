@@ -1,0 +1,194 @@
+:root {
+  --color-p-Moderate-violet-400: hsl(263, 55%, 52%);
+  --color-p-text-Moderate-violet-450: hsl(263, 55%, 52%, 50);
+  --color-p-Moderate-violet-425: hsla(263, 55%, 62%);
+  --color-p-Very-dark-grayish-blue-500: hsl(217, 19%, 35%);
+  --color-p-Very-dark-blackish-blue-600: hsl(219, 29%, 14%);
+  --color-p-White-100: hsl(0, 0%, 100%);
+  --color-n-Light-gray-200: hsl(0, 0%, 81%);
+  --color-n-Light-grayish-blue-300: hsl(210, 46%, 95%);
+  /* "Verified Graduate" has the same color as the person's name with 50% opacity
+Review paragraphs inside the quotations have the same color as well, but are at 70% opacity */
+  --font-size: 13px;
+  --font-wight-500: 500;
+  --font-wight-600: 600;
+}
+@font-face {
+  font-family: Barlow Semi Condensed;
+  src: url("/Frontend-Mentor-projects/testimonials-grid-section-main/assets/Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+html,
+body {
+  /* font-size: var(--font-size); */
+  height: 100%;
+
+  background-color: var(--color-n-Light-grayish-blue-300);
+  font-family: Barlow Semi Condensed;
+  font-weight: var(--font-wight-600);
+  display: grid;
+  justify-content: center;
+}
+main.grid-main {
+  margin-top: 4rem;
+  display: grid;
+  width: 90%;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 2rem;
+}
+main.grid-main section.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  color: var(--color-p-White-100);
+  padding-inline: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+main.grid-main section.card div.details {
+  display: flex;
+  flex-direction: row;
+}
+main.grid-main section.card div.details div.text-details {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: var(--font-size);
+}
+main.grid-main section.card div.details div.text-details p.name {
+  font-weight: var(--font-wight-500);
+}
+main.grid-main section.card div.details div.text-details p.verified {
+  font-weight: var(--font-wight-500);
+  color: var(--color-p-White-100);
+  opacity: 50%;
+}
+
+main.grid-main section.card div.details div.img {
+  margin-top: 1rem;
+  margin-left: 0.1rem;
+  border: 2px solid var(--color-p-Moderate-violet-425);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+main.grid-main section.card div.details img.profile-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+main.grid-main section.card div.text article.about p.highlight {
+  margin-top: 1rem;
+  font-size: 23.5px;
+}
+main.grid-main section.card div.text article.about p.quates {
+  margin-top: 1rem;
+  font-weight: var(--font-wight-500);
+  color: var(--color-p-White-100);
+  opacity: 50%;
+}
+main.grid-main section.card#card1 {
+  background-color: var(--color-p-Moderate-violet-400);
+}
+main.grid-main section.card#card1 {
+  width: 100%;
+}
+main.grid-main section.card#card1 div.details {
+  width: 100%;
+  display: flex;
+}
+main.grid-main section.card#card1 div.details img.background-img {
+  position: sticky;
+}
+main.grid-main section.card#card2 {
+  background-color: var(--color-p-Very-dark-grayish-blue-500);
+}
+main.grid-main section.card#card2 div.details div.img {
+  border: 2px solid var(--color-n-Light-gray-200);
+}
+
+main.grid-main section.card#card3 {
+  background-color: var(--color-p-White-100);
+  color: var(--color-p-Very-dark-blackish-blue-600);
+}
+main.grid-main section.card#card3 div.details div.img {
+  border: 2px solid var(--color-n-Light-gray-200);
+}
+main.grid-main section.card#card3 div.text article.about p.highlight,
+main.grid-main section.card#card3 div.text article.about p.quates,
+main.grid-main section.card#card3 div.details div.text-details p.verified {
+  color: var(--color-p-Very-dark-blackish-blue-600);
+}
+main.grid-main section.card#card4 {
+  background-color: var(--color-p-Very-dark-blackish-blue-600);
+}
+main.grid-main section.card#card5 {
+  background-color: var(--color-p-White-100);
+  color: var(--color-p-Very-dark-blackish-blue-600);
+}
+main.grid-main section.card#card5 div.details div.img {
+  border: 2px solid var(--color-n-Light-gray-200);
+}
+main.grid-main section.card#card5 div.text article.about p.highlight,
+main.grid-main section.card#card5 div.text article.about p.quates,
+main.grid-main section.card#card5 div.details div.text-details p.verified {
+  color: var(--color-p-Very-dark-blackish-blue-600);
+}
+main.grid-main section.card#card1 {
+  background-color: var(--color-p-Moderate-violet-400);
+  position: relative;
+}
+
+main.grid-main section.card#card1 div.details img.background-img {
+  position: absolute;
+  top: 0px;
+  right: 80px;
+  z-index: 0;
+}
+
+main.grid-main section.card#card1 div.text-details,
+main.grid-main section.card#card1 div.text {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1439px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  main.grid-main {
+    max-width: 1250px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  main.grid-main section.card#card1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  main.grid-main section.card#card3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  main.grid-main section.card#card4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  main.grid-main section.card#card5 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}

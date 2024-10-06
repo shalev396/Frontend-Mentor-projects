@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: Overpass;
-  src: url("/interactive-rating-component-main/assets/Overpass/Overpass-VariableFont_wght.ttf");
+  src: url("/Frontend-Mentor-projects/interactive-rating-component-main/assets/Overpass/Overpass-VariableFont_wght.ttf");
 }
 * {
   box-sizing: border-box;

@@ -25,7 +25,7 @@ img {
 }
 html,
 body {
-  /* font-size: var(--font-size); */
+  font-size: var(--font-size);
   height: 100%;
 
   background-color: var(--color-p-Very-Dark-Blue-800);
@@ -40,10 +40,10 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  height: 500px;
-  width: 90%;
+  height: fit-content;
+  width: 340px;
   background-color: var(--color-p-DarkBlue-700);
-  padding-left: 1.4rem;
+  padding-inline: 1.4rem;
   border: solid 0px;
   border-radius: 1rem;
 }
@@ -51,7 +51,7 @@ main div {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-main div img {
+main div.Rating img {
   padding: 1rem;
   background-color: var(--color-p-DarkBlue-600);
   border: solid 0px;
@@ -68,4 +68,78 @@ main div.p {
 
 main div.thanks {
   display: none;
+}
+main div div.rateButton {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-inline: 0px;
+  justify-content: space-around;
+  align-items: center;
+}
+main div div.rateButton button {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: var(--font-size);
+  color: var(--color-p-Light-Grey-200);
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-p-DarkBlue-600);
+  border: 0px solid;
+  border-radius: 50%;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  font-weight: var(--font-wight-700);
+}
+main div div.submit {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  justify-content: center;
+}
+main div div.submit button {
+  font-size: var(--font-size);
+  font-weight: var(--font-wight-700);
+  background-color: var(--color-p-Orange-500);
+  letter-spacing: 0.15rem;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 2rem;
+}
+main div.submit button:hover {
+  background-color: var(--color-p-White-100);
+  color: var(--color-p-Very-Dark-Blue-800);
+}
+
+main div.Rating div.rateButton button:hover {
+  background-color: var(--color-p-Orange-500);
+  color: var(--color-p-Very-Dark-Blue-800);
+}
+
+main div.Rating div.rateButton button.active {
+  background-color: var(--color-p-White-100);
+  color: var(--color-p-Very-Dark-Blue-800);
+}
+
+main div.thanks {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+main div.thanks div.selection {
+  background-color: var(--color-p-DarkBlue-600);
+  color: var(--color-p-Orange-500);
+  padding: 1rem;
+  border-radius: 6rem;
+}
+main div.thanks div.text {
+  display: flex;
+  color: var(--color-p-Light-Grey-200);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

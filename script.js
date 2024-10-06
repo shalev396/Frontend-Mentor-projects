@@ -48,6 +48,18 @@ const projects = [
     link: "/Frontend-Mentor-projects/testimonials-grid-section-main/index.html",
     badge: "Done",
   },
+  {
+    id: 5,
+    name: "interactive rating component",
+    description: `This challenge is to build out this interactive rating component and get it looking as close to the design as possible.`,
+    difficulty: "1",
+    level: "NEWBIE",
+    tags: ["HTML", "CSS", "JS"],
+    image:
+      "/Frontend-Mentor-projects/interactive-rating-component-main/design/desktop-preview.jpg",
+    link: "/Frontend-Mentor-projects/interactive-rating-component-main/index.html",
+    badge: "Done",
+  },
 ];
 const level1Color = "rgb(106, 190, 205)";
 const level2Color = "rgb(170, 215, 66)";

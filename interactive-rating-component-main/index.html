@@ -13,25 +13,14 @@
     />
 
     <title>Frontend Mentor | Interactive rating component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <!-- Rating state start -->
     <main>
-      <div class="Rating">
+      <div class="Rating" id="Rating">
         <div>
           <img
-            src="/interactive-rating-component-main/images/icon-star.svg"
+            src="/interactive-rating-component-main/interactive-rating-component-main/images/icon-star.svg"
             alt=""
           />
         </div>
@@ -44,28 +33,31 @@
             feedback is appreciated to help us improve our offering!
           </p>
         </div>
-        <div>
+        <div class="rateButton">
           <button>1</button>
           <button>2</button>
           <button>3</button>
           <button>4</button>
           <button>5</button>
         </div>
-        <div>
-          <button>Submit</button>
+        <div class="submit">
+          <button id="submit">SUBMIT</button>
         </div>
       </div>
-      <div class="thanks">
+      <div class="thanks" id="thanks">
         <div>
-          <img src="" alt="" />
+          <img
+            src="/interactive-rating-component-main/interactive-rating-component-main/images/illustration-thank-you.svg"
+            alt=""
+          />
         </div>
-        <div>
-          <p>You selected</p>
+        <div class="selection">
+          <p id="selected">You selected</p>
         </div>
         <div>
           <h1>Thank you!</h1>
         </div>
-        <div>
+        <div class="text">
           <p>
             We appreciate you taking the time to give a rating. If you ever need
             more support, don’t hesitate to get in touch!
@@ -73,5 +65,6 @@
         </div>
       </div>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>

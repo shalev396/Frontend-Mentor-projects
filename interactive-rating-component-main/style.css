@@ -1,0 +1,71 @@
+:root {
+  --color-p-Orange-500: hsl(25, 97%, 53%);
+  --color-p-White-100: hsl(0, 0%, 100%);
+  --color-p-Light-Grey-200: hsl(217, 12%, 63%);
+  --color-p-DarkBlue-700: hsl(213, 19%, 18%);
+  --color-p-DarkBlue-600: hsl(210, 17%, 20%);
+  --color-p-Very-Dark-Blue-800: hsl(216, 12%, 8%);
+
+  --font-size: 15px;
+  --font-wight-400: 400;
+  --font-wight-700: 700;
+}
+@font-face {
+  font-family: Overpass;
+  src: url("/interactive-rating-component-main/assets/Overpass/Overpass-VariableFont_wght.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+html,
+body {
+  /* font-size: var(--font-size); */
+  height: 100%;
+
+  background-color: var(--color-p-Very-Dark-Blue-800);
+  font-family: Overpass;
+  font-weight: var(--font-wight-400);
+  color: var(--color-p-White-100);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 90%;
+  background-color: var(--color-p-DarkBlue-700);
+  padding-left: 1.4rem;
+  border: solid 0px;
+  border-radius: 1rem;
+}
+main div {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+main div img {
+  padding: 1rem;
+  background-color: var(--color-p-DarkBlue-600);
+  border: solid 0px;
+  border-radius: 360px;
+}
+main div h1 {
+  font-size: 26px;
+  font-weight: var(--font-wight-700);
+}
+main div.p {
+  color: var(--color-p-Light-Grey-200);
+  font-weight: var(--font-wight-400);
+}
+
+main div.thanks {
+  display: none;
+}

@@ -1,0 +1,116 @@
+:root {
+  --color-p-White-100: hsl(0, 0%, 100%);
+  --color-p-Light-pink-300: hsl(275, 100%, 97%);
+  --color-p-Grayish-purple-700: hsl(292, 16%, 49%);
+  --color-p-Dark-purple-900: hsl(292, 42%, 14%);
+
+  --font-size: 16px;
+  --font-wight-400: 400;
+  --font-wight-600: 600;
+  --font-wight-700: 700;
+}
+@font-face {
+  font-family: Work Sans;
+  src: url("./assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+html,
+body {
+  font-size: var(--font-size);
+  height: 100%;
+
+  background-color: var(--color-p-Very-Dark-Blue-800);
+  font-family: Work Sans;
+  font-weight: var(--font-wight-400);
+  color: var(--color-p-Dark-purple-900);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+body div.lowerBackground {
+  height: 1000px;
+  width: 100%;
+  background-color: var(--color-p-Light-pink-300);
+}
+main {
+  margin-top: 10rem;
+  width: 90%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-p-White-100);
+  border-radius: 0.5rem;
+}
+main div.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+}
+main div.title img {
+  width: 25px;
+  height: 25px;
+  margin-right: 1.5rem;
+}
+main div.questionSection div.question div.questionTitle h2 {
+  font-size: var(--font-size);
+}
+main div.questionSection {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  padding: 0 0rem;
+  margin-left: 0.5rem;
+}
+main div.questionSection div.question div.answer {
+  display: none;
+}
+main div.questionSection div.question div.questionTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+main div.questionSection div.question img {
+  margin-left: auto;
+  display: block;
+}
+main div.questionSection div.question {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-p-Grayish-purple-700);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+body main div.questionSection :last-child {
+  border-bottom: 0px none var(--color-p-Grayish-purple-700);
+}
+@media (min-width: 600px) {
+  main div.upperBackground {
+    width: 100%;
+  }
+  main div.upperBackground img {
+    width: 100%;
+    content: url("./faq-accordion-main/assets/images/background-pattern-desktop.svg");
+  }
+  main {
+    width: 550px;
+  }
+}

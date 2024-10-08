@@ -3,11 +3,9 @@
 function updateImageSrc() {
   const imgElement = document.getElementById("background-img");
   if (window.innerWidth > 400) {
-    imgElement.src =
-      "/faq-accordion-main/assets/images/background-pattern-desktop.svg";
+    imgElement.src = "./assets/images/background-pattern-desktop.svg";
   } else {
-    imgElement.src =
-      "/faq-accordion-main/assets/images/background-pattern-mobile.svg";
+    imgElement.src = "./assets/images/background-pattern-mobile.svg";
   }
 }
 updateImageSrc();
